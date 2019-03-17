@@ -18,15 +18,15 @@
 ## Ćwiczenia
 
  - utwórz hierarchię jednostek miar i kalkulator, umożliwiający przeliczanie pomiędzy różnymi systemami:
-  - klasa bazowa dla wszystkich - `Unit` (może być interfejsem) - każda jednostka ma swój symbol i wartość oraz możliwość wydrukowania "się" (można do tego użyć dodatkowej klasy)
-  - klasy dla podstawowych rodzajów miar - `Lenght`, `Mass` i `Time` - możliwa jest konwersja tylko pomiędzy jednostkami tego samego typu (masa na masę itd.)
-  - klasy dla jednostek SI - `SILength` i `SIMass` (albo `Meter` i `Kilogram`)
-  - klasy dla jednostek imperialnych - `ImperialLength` i `ImperialMass`  (albo `Foot` i `Pound`)
-  - klasy dla jednostek wspólnych - `CommonTime` (albo `Second`)
-  - klasę do obliczeń `UnitConverter` mającą statyczną metodę `Unit convert(Unit source, String toSymbol)`
-  - w przypadku próby konwersji do nieznanej jednostki (np. `UnitConverter.convert(new Meter(1), "abc")`) powinien być zgłoszony wyjątek
+   - klasa bazowa dla wszystkich - `Unit` (może być interfejsem) - każda jednostka ma swój symbol i wartość oraz możliwość wydrukowania "się" (można do tego użyć dodatkowej klasy)
+   - klasy dla podstawowych rodzajów miar - `Lenght`, `Mass` i `Time` - możliwa jest konwersja tylko pomiędzy jednostkami tego samego typu (masa na masę itd.)
+   - klasy dla jednostek SI - `SILength` i `SIMass` (albo `Meter` i `Kilogram`)
+   - klasy dla jednostek imperialnych - `ImperialLength` i `ImperialMass`  (albo `Foot` i `Pound`)
+   - klasy dla jednostek wspólnych - `CommonTime` (albo `Second`)
+   - klasę do obliczeń `UnitConverter` mającą statyczną metodę `Unit convert(Unit source, String toSymbol)`
+   - w przypadku próby konwersji do nieznanej jednostki (np. `UnitConverter.convert(new Meter(1), "abc")`) powinien być zgłoszony wyjątek
   `UnknownUnitException` zawierający symbol, którego nie udało się przetłumaczyć na jednostkę
-  - w przypadku próby konwersji pomiędzy rodzajami (np. długość na masę) powinien być zgłoszony wyjątek `IncompatibleConversionException` 
+   - w przypadku próby konwersji pomiędzy rodzajami (np. długość na masę) powinien być zgłoszony wyjątek `IncompatibleConversionException` 
   zawierający informację jakie typy nie mogą być między sobą konwertowane
-  - przeliczniki powinny być zdefiniowane w klasie `UnitConverter`
-  - nie powinno być możliwości utworzenia obiektów `Lenght`, `Mass` i `Time`
+   - przeliczniki powinny być zdefiniowane w klasie `UnitConverter`
+   - nie powinno być możliwości utworzenia obiektów `Lenght`, `Mass` i `Time`
