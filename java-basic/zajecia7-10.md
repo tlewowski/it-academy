@@ -19,7 +19,7 @@
 
  - do obsługi plików służy obecnie głównie pakiet `java.nio`
  - ścieżkę do plików reprezentuje się za pomocą obiektu typu `Path`, tworzonego przez `Paths.get`
- - małe pliki można odczytywać na raz, np. za pomocą `Files.realAllLines`
+ - małe pliki można odczytywać na raz, np. za pomocą `Files.readAllLines`
  - duże pliki trzeba odczytywać strumieniem, np. za pomocą `Files.newInputStream`
  - strumienie można konsumować za pomocą skanerów (`Scanner`) krok po kroku
  - wywołanie `.next` na obiekcie skanera powoduje odczyt kolejnego elementu i przesunięcie kursora - poprzedni element przestaje być dostępny w strumieniu
