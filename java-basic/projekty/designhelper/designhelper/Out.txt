@@ -1,0 +1,12 @@
+Czy lokal z pliku jest poprawny? 
+true
+Cena lokalu z pliku wynosi: 40000.0
+Czy lokal jest poprawny? 
+true
+Cena lokalu wynosi: 20000.0
+Czy biuro jest poprawny? 
+true
+Cena lokalu wynosi: 15000.0
+Czy mieszkanie jest poprawne? 
+true
+Cena mieszkania wynosi: 10000.0
