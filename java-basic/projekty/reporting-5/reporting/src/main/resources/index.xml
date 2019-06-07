@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?> 
+ <report> 
+
+<metric name="liczba transakcji" value = "3" />
+<metric name="liczba produktów" value = "4" />
+<metric name="Tekst" value = "4020" />
+</report>
